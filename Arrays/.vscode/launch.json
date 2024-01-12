@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MoveZero2",
+            "request": "launch",
+            "mainClass": "MoveZero2",
+            "projectName": "Arrays_a90ae9e5"
+        },
+        {
+            "type": "java",
+            "name": "SearchinRotatedSorted",
+            "request": "launch",
+            "mainClass": "SearchinRotatedSorted",
+            "projectName": "Data Structures_90f4b8d5"
+        },
+        {
+            "type": "java",
+            "name": "Search",
+            "request": "launch",
+            "mainClass": "Search",
+            "projectName": "Data Structures_90f4b8d5"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearch",
+            "request": "launch",
+            "mainClass": "BinarySearch",
+            "projectName": "Data Structures_90f4b8d5"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "Data Structures_90f4b8d5"
+        }
+    ]
+}
