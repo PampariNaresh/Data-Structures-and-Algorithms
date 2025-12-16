@@ -1,6 +1,14 @@
 import java.util.*;
 
 class BinaryTree {
+    static class Pair<K,V> {
+        K height;
+        V isBalanced;
+
+        Pair(K height, V isBalanced) {
+            this.height = height;
+            this.isBalanced = isBalanced;
+    }}
     static class TreeNode {
         int data;
         TreeNode left;
@@ -195,6 +203,20 @@ class BinaryTree {
 
     }
 
+    public static Pair<Integer, Boolean> isBalanced2(TreeNode root) {
+        if (root == null) {
+            Pair<Integer, Boolean> p = new Pair<>(0, true);
+            return p;}
+        Pair<Integer, Boolean> left = isBalanced2(root.left);
+        Pair<Integer, Boolean> right = isBalanced2(root.right);
+        boolean leftAns = left.isBalanced;
+        boolean rightAns = right.isBalanced;
+        boolean diff = Math.abs(left.height - right.height) <= 1;
+        Pair<Integer, Boolean> myPair = new Pair<>(1 + Math.max(left.height, right.height), leftAns && rightAns && diff);
+        return myPair;
+
+    }
+
     public static void main(String[] args) {
         // int arr[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
         // TreeNode root = buildTree(null, arr);
@@ -221,4 +243,5 @@ class BinaryTree {
          */
 
     }
+
 }
