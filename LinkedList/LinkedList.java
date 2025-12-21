@@ -161,5 +161,11 @@ class LinkedList {
         head = deletebefore(head, new Node(20));
         print(head);
 
+
+
+
+
+        
+
     }
 }
